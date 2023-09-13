@@ -5,12 +5,12 @@
 import sys
 from base.singly_linked_list import SinglyLinkedList
 
-# 引用当前文件夹下的single_linked_list
+# 引用base文件夹下的single_linked_list
 sys.path.append('base/singly_linked_list')
 
 
 def reverse(head):
-    """链表返转
+    """链表反转
     核心思想:
         a -> b -> c -> d -> None
         a -> None
@@ -35,7 +35,7 @@ def is_palindrome(head_node):
     核心思想:
         通过快慢指针找到链表的中间分隔点
         反转slow_node，同时分隔head_node, 分别比对head_node和slow_node,值都相同说明是回文串
-    :param head_node: 一个字符一个字符的单链表
+    :param head_node: 存储单字符的单链表
     :return: True-是回文串  False-不是回文串
     """
     head_node.print_all()
@@ -61,7 +61,6 @@ def is_palindrome(head_node):
 
 
 if __name__ == '__main__':
-    # the result should be False, True, True, True, True
     test_str_arr = ['abcba']
     for arr in test_str_arr:
         sll = SinglyLinkedList()
