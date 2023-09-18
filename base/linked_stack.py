@@ -1,6 +1,3 @@
-from typing import Optional
-
-
 class Node:
     """链表数据存储"""
 
